@@ -18,3 +18,16 @@ python scripts/validate_catalog.py --verify-packages
 
 目录中的 `version`、`apiVersion`、`minHostApiVersion`、`runtime` 必须与包内
 `manifest.json` 完全一致；缺省字段按 `1` 处理。
+
+## Windows 原生构建（GraalVM Native Image）
+
+从网易云 `1.3.0` / 酷狗 `0.3.0` 起，两个音源除了 JNI 还导出一套 C ABI v1
+（`cpp_abi_version` / `cpp_create` / `cpp_invoke` / `cpp_cancel` / `cpp_close`），
+宿主按符号直调，因此**原生构建的客户端也能导入这两个音源**。
+
+- 目录里的 `runtime` 仍是 `jni`：C ABI 是同一个 DLL 里的追加导出，manifest 的
+  `type` 不变，包格式与校验方式都没有变化。
+- 需要宿主 `>= 1.9.0`（首个带 C ABI 桥的版本）。更早的原生构建客户端导入这两个包
+  会明确提示「该音源只导出了 JNI 符号」，不会留下半装状态。
+- 规范（内存所有权、返回码、线程与生命周期约束）见 CPPlayer-KMP 仓库的
+  `docs/dev/PROVIDER_NATIVE_ABI.md`。

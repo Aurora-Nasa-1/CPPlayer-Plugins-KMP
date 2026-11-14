@@ -6,11 +6,11 @@
       "id": "netease-cloudmusic-rs",
       "kind": "provider",
       "name": "NeteaseCloudMusicApi-RS",
-      "version": "1.2.2",
+      "version": "1.3.0",
       "description": "基于 KMP SDK v1 重构的网易云原生音源，支持 161 项业务操作、动态音质与 Native 会话。",
       "author": "Aurora-Nasa-1",
       "homepage": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti",
-      "changelog": "v1.2.2: 修复 SDK v1 下每日推荐、私人 FM 与心动模式不可用的问题，补全推荐能力声明并严格限制返回数量。",
+      "changelog": "v1.3.0: 新增 C ABI v1（cpp_* 导出），Windows 原生构建（GraalVM Native Image）可直接加载；JNI 行为不变，JVM / Android 仍走原路径。",
       "apiVersion": 1,
       "minHostApiVersion": 1,
       "artifacts": [
@@ -18,41 +18,41 @@
           "platform": "windows",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.2.2/ncm-api-rs-windows-1.2.2.zip",
-          "sha256": "9b3c58b9ea15b52a85eb37f3c63043d0f2db2015b4cf4add5a54802a26a9868e",
-          "bytes": 9296667
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.0/ncm-api-rs-windows-1.3.0.zip",
+          "sha256": "dfad47868622b3a0529af0981caab19be4efeb3b7ce61591946a8b5bd8300124",
+          "bytes": 9466889
         },
         {
           "platform": "linux",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.2.2/ncm-api-rs-linux-1.2.2.zip",
-          "sha256": "080595b6cd20654ed3ccd49116421ddf2f7a54ada92b2e568037ca02399ea00c",
-          "bytes": 10040572
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.0/ncm-api-rs-linux-1.3.0.zip",
+          "sha256": "a680fe833e5412e552122ce3b9545e2fead25a7307b5fa4ce4f3a183d7bbae8a",
+          "bytes": 10003224
         },
         {
           "platform": "android",
           "arch": "arm64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.2.2/ncm-api-rs-android-1.2.2.zip",
-          "sha256": "02663e4700253f956fffa1a8a391c83faff5da29469b0e86126e08ea66215139",
-          "bytes": 16771121
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.0/ncm-api-rs-android-1.3.0.zip",
+          "sha256": "8ad2da218dfb85e41e5d59a0229637358a5e819233cf62df5c73e5b53b67c42b",
+          "bytes": 16895007
         },
         {
           "platform": "android",
           "arch": "armv7",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.2.2/ncm-api-rs-android-1.2.2.zip",
-          "sha256": "02663e4700253f956fffa1a8a391c83faff5da29469b0e86126e08ea66215139",
-          "bytes": 16771121
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.0/ncm-api-rs-android-1.3.0.zip",
+          "sha256": "8ad2da218dfb85e41e5d59a0229637358a5e819233cf62df5c73e5b53b67c42b",
+          "bytes": 16895007
         },
         {
           "platform": "android",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.2.2/ncm-api-rs-android-1.2.2.zip",
-          "sha256": "02663e4700253f956fffa1a8a391c83faff5da29469b0e86126e08ea66215139",
-          "bytes": 16771121
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.0/ncm-api-rs-android-1.3.0.zip",
+          "sha256": "8ad2da218dfb85e41e5d59a0229637358a5e819233cf62df5c73e5b53b67c42b",
+          "bytes": 16895007
         }
       ]
     },
@@ -60,11 +60,11 @@
       "id": "kugou",
       "kind": "provider",
       "name": "酷狗音乐",
-      "version": "0.2.2",
+      "version": "0.3.0",
       "description": "基于 KMP SDK v1 重构的酷狗音乐原生音源，支持 161 项业务操作、动态音质与 Native 会话。",
       "author": "Aurora-Nasa-1",
       "homepage": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer",
-      "changelog": "v0.2.2: 修复能力声明（包含 recommendations.personalFm、auth.actions 等）、修复每日推荐与私人FM歌曲解析、修复手机号与二维码登录、完善分页强校验数量截断。",
+      "changelog": "v0.3.0: 新增 C ABI v1（cpp_* 导出），Windows 原生构建（GraalVM Native Image）可直接加载；JNI 行为不变，JVM / Android 仍走原路径。",
       "apiVersion": 1,
       "minHostApiVersion": 1,
       "artifacts": [
@@ -72,41 +72,41 @@
           "platform": "windows",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.2/kugou-music-rs-windows-x86_64.zip",
-          "sha256": "d4f523b831ba0dcf4e387bf95ca25dd6a3d7fc166ff47c016af9b2ab69ee5139",
-          "bytes": 5570315
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.3.0/kugou-music-rs-windows-x86_64.zip",
+          "sha256": "1e558e134899e1c56ecf60b77bfb7ca0d413039d0652951be93351c296b9b250",
+          "bytes": 5542285
         },
         {
           "platform": "linux",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.2/kugou-music-rs-linux-x86_64.zip",
-          "sha256": "a96417610ee4533583a6698ad131eb4e8937f6080f97852bed78a3054befbef5",
-          "bytes": 5811289
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.3.0/kugou-music-rs-linux-x86_64.zip",
+          "sha256": "ca77c87313a9e2afd988ff778220563c5ff33ae370ce6bbbe643cc4c68882dd5",
+          "bytes": 5820323
         },
         {
           "platform": "android",
           "arch": "arm64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.2/kugou-music-rs-android.zip",
-          "sha256": "bcd3d7369a476e518d07ead78f6dcd96873c88a2ac9a7724ba2f721d26640229",
-          "bytes": 11042383
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.3.0/kugou-music-rs-android.zip",
+          "sha256": "f67739be563f010aababdb7744381741f0fec528c870374f3d282e5bc3514299",
+          "bytes": 11182306
         },
         {
           "platform": "android",
           "arch": "armv7",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.2/kugou-music-rs-android.zip",
-          "sha256": "bcd3d7369a476e518d07ead78f6dcd96873c88a2ac9a7724ba2f721d26640229",
-          "bytes": 11042383
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.3.0/kugou-music-rs-android.zip",
+          "sha256": "f67739be563f010aababdb7744381741f0fec528c870374f3d282e5bc3514299",
+          "bytes": 11182306
         },
         {
           "platform": "android",
           "arch": "x64",
           "runtime": "jni",
-          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.2/kugou-music-rs-android.zip",
-          "sha256": "bcd3d7369a476e518d07ead78f6dcd96873c88a2ac9a7724ba2f721d26640229",
-          "bytes": 11042383
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.3.0/kugou-music-rs-android.zip",
+          "sha256": "f67739be563f010aababdb7744381741f0fec528c870374f3d282e5bc3514299",
+          "bytes": 11182306
         }
       ]
     }
