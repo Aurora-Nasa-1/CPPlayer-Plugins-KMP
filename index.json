@@ -55,6 +55,60 @@
           "bytes": 16771121
         }
       ]
+    },
+    {
+      "id": "kugou",
+      "kind": "provider",
+      "name": "酷狗音乐",
+      "version": "0.2.0",
+      "description": "基于 KMP SDK v1 重构的酷狗音乐原生音源，支持 161 项业务操作、动态音质与 Native 会话。",
+      "author": "Aurora-Nasa-1",
+      "homepage": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer",
+      "changelog": "v0.2.0: 基于 kmp-sdk-v1 规范全面重构，支持 161 项业务操作，导出 NativeSession 标准符号与免反射 DLL/SO 直接加载。",
+      "apiVersion": 1,
+      "minHostApiVersion": 1,
+      "artifacts": [
+        {
+          "platform": "windows",
+          "arch": "x64",
+          "runtime": "jni",
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.0/kugou-music-rs-windows-x86_64.zip",
+          "sha256": "2219a20640cd836187a0c21da3a0bd39f0349dd0b5c2fa1697d4717085c90820",
+          "bytes": 5291617
+        },
+        {
+          "platform": "linux",
+          "arch": "x64",
+          "runtime": "jni",
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.0/kugou-music-rs-linux-x86_64.zip",
+          "sha256": "7c445def052bd6d0247a674e325ab4ad0366702999bed1f67880c6130b9b9d2c",
+          "bytes": 5790103
+        },
+        {
+          "platform": "android",
+          "arch": "arm64",
+          "runtime": "jni",
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.0/kugou-music-rs-android.zip",
+          "sha256": "6f34cecc5968a33eed2fdacd11c4df701fa49ee06e7a30035c210fcbbf44bdf8",
+          "bytes": 8188823
+        },
+        {
+          "platform": "android",
+          "arch": "armv7",
+          "runtime": "jni",
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.0/kugou-music-rs-android.zip",
+          "sha256": "6f34cecc5968a33eed2fdacd11c4df701fa49ee06e7a30035c210fcbbf44bdf8",
+          "bytes": 8188823
+        },
+        {
+          "platform": "android",
+          "arch": "x64",
+          "runtime": "jni",
+          "url": "https://github.com/Aurora-Nasa-1/kugouMusic-api-cpplayer/releases/download/v0.2.0/kugou-music-rs-android.zip",
+          "sha256": "6f34cecc5968a33eed2fdacd11c4df701fa49ee06e7a30035c210fcbbf44bdf8",
+          "bytes": 8188823
+        }
+      ]
     }
   ]
 }
