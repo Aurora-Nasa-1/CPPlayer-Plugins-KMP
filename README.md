@@ -25,8 +25,11 @@ python scripts/validate_catalog.py --verify-packages
 （`cpp_abi_version` / `cpp_create` / `cpp_invoke` / `cpp_cancel` / `cpp_close`），
 宿主按符号直调，因此**原生构建的客户端也能导入这两个音源**。
 
-- 目录里的 `runtime` 仍是 `jni`：C ABI 是同一个 DLL 里的追加导出，manifest 的
-  `type` 不变，包格式与校验方式都没有变化。
+- 新发布的目录条目使用 `runtime: "native"`，包内 `manifest.json` 的 `type` 也必须是
+  `native`。C ABI 是同一个 DLL 里的追加导出，包格式与校验方式不变。
+- `runtime: "jni"` 仅保留给已发布的旧包。1.8.7 及更早的宿主忽略 `contract`，
+  会把 `type: "jni"` 的 SDK 包当成旧 JNI Provider；新条目改用 `native` 后，
+  旧宿主会明确拒绝，而不是静默走旧协议。
 - 需要宿主 `>= 1.9.0`（首个带 C ABI 桥的版本）。更早的原生构建客户端导入这两个包
   会明确提示「该音源只导出了 JNI 符号」，不会留下半装状态。
 - 规范（内存所有权、返回码、线程与生命周期约束）见 CPPlayer-KMP 仓库的

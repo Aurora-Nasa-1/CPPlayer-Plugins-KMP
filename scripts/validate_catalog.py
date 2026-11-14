@@ -80,9 +80,9 @@ def validate_catalog(data):
             require(arch in ("any", "x64", "arm64", "armv7"), "Invalid arch")
             require((platform, arch) not in targets, "Duplicate target artifact")
             targets.add((platform, arch))
-            runtimes = ("http", "jni", "binary") if p["kind"] == "provider" else ("rhino-js",)
+            runtimes = ("http", "jni", "native", "binary") if p["kind"] == "provider" else ("rhino-js",)
             require(a["runtime"] in runtimes, "Invalid runtime")
-            if a["runtime"] in ("jni", "binary"):
+            if a["runtime"] in ("jni", "native", "binary"):
                 require(platform != "any" and arch != "any", "Native artifact needs an exact target")
             require(not (platform == "android" and a["runtime"] == "binary"), "Android binary not supported")
             https_url(a["url"])
