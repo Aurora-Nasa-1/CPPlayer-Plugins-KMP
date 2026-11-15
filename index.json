@@ -163,6 +163,52 @@
           "bytes": 5309296
         }
       ]
+    },
+    {
+      "homepage": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin",
+      "author": "Aurora-Nasa-1",
+      "artifacts": [
+        {
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-windows.zip",
+          "bytes": 3992698,
+          "platform": "windows",
+          "sha256": "6d5d496bbb64f66dbc393faefc8880fdbec47945c160ece8dec1b4d65582f4ff",
+          "runtime": "native",
+          "arch": "x64"
+        },
+        {
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-linux.zip",
+          "bytes": 4168058,
+          "platform": "linux",
+          "sha256": "d56bc14b8f95d3f949462e6568e09b21fb1a8601596e713c7168feb109932a7d",
+          "runtime": "native",
+          "arch": "x64"
+        },
+        {
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-macos.zip",
+          "bytes": 3807023,
+          "platform": "macos",
+          "sha256": "4026a561d99659657927219f7faad4d54851317dbed92ecbbf75fa26142bfb37",
+          "runtime": "native",
+          "arch": "arm64"
+        },
+        {
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-android.zip",
+          "bytes": 3948359,
+          "platform": "android",
+          "sha256": "055a6426a2f63aa75fc6221921d1a286df171cd5963b78c4aa42379cf927af1e",
+          "runtime": "native",
+          "arch": "arm64"
+        }
+      ],
+      "version": "1.0.0",
+      "description": "基于 KMP SDK v1 的 Apple Music 原生音源，支持搜索/详情/歌词/歌单/专辑/艺人、明文试听与 Widevine DRM 播放。",
+      "name": "Apple Music (Rust)",
+      "id": "apple-music-rs",
+      "apiVersion": 1,
+      "minHostApiVersion": 1,
+      "kind": "provider",
+      "changelog": "v1.0.0: 首个 kmp-sdk-v1 原生 Provider；导出 JNI 与 C ABI v1；Widevine 加密 HLS 经宿主 CDM 解密，附 drm_e2e 真实凭据验收工具。"
     }
   ]
 }
