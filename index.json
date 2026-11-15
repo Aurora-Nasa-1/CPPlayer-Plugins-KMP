@@ -109,6 +109,60 @@
           "bytes": 11221730
         }
       ]
+    },
+    {
+      "id": "cp.provider.spotify",
+      "kind": "provider",
+      "name": "Spotify (librespot)",
+      "version": "0.1.1",
+      "description": "基于 librespot 的 Spotify 原生音源，支持设备码扫码登录、目录检索、歌词与回环 WAV 播放；播放需要 Spotify Premium。",
+      "author": "Aurora-Nasa-1",
+      "homepage": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer",
+      "changelog": "v0.1.1: 首个 CPPlayer KMP kmp-sdk-v1 原生 Provider；同时导出 NativeSession JNI 四符号与 C ABI v1 五符号；支持设备码扫码登录、搜索/详情/歌词/歌单/专辑/艺人、回环 WAV 播放与 Range seek；Android 三个 ABI 独立打包。",
+      "apiVersion": 1,
+      "minHostApiVersion": 1,
+      "artifacts": [
+        {
+          "platform": "windows",
+          "arch": "x64",
+          "runtime": "native",
+          "url": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer/releases/download/module-v0.1.1/cp-spotify-module-windows-0.1.1.zip",
+          "sha256": "1b69d8444f02d3e49e4e58d57ea2b0c3c2e8a9254c4f6240c0a679645eea8451",
+          "bytes": 4317588
+        },
+        {
+          "platform": "linux",
+          "arch": "x64",
+          "runtime": "native",
+          "url": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer/releases/download/module-v0.1.1/cp-spotify-module-linux-0.1.1.zip",
+          "sha256": "b262b76b3894aac43f516a889e08ddf534a63eddaab7c3e395a86a869dd65521",
+          "bytes": 5317008
+        },
+        {
+          "platform": "android",
+          "arch": "arm64",
+          "runtime": "native",
+          "url": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer/releases/download/module-v0.1.1/cp-spotify-module-android-arm64-v8a-0.1.1.zip",
+          "sha256": "a6d7e68443c5fe20b3a5d1560fd7c6e23209e4f530fd3698d1527024fa7331f7",
+          "bytes": 5300563
+        },
+        {
+          "platform": "android",
+          "arch": "armv7",
+          "runtime": "native",
+          "url": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer/releases/download/module-v0.1.1/cp-spotify-module-android-armeabi-v7a-0.1.1.zip",
+          "sha256": "850800c78fd50ed7a27368117a6cc2bc275af91d6e2e16fea7de3987e8672978",
+          "bytes": 4364289
+        },
+        {
+          "platform": "android",
+          "arch": "x64",
+          "runtime": "native",
+          "url": "https://github.com/Aurora-Nasa-1/Spotify-Premium-CPPlayer/releases/download/module-v0.1.1/cp-spotify-module-android-x86_64-0.1.1.zip",
+          "sha256": "18fb686dd972bfd75eed799de3adde3cdd97de460d8ea8261da1ad4431aa3543",
+          "bytes": 5309296
+        }
+      ]
     }
   ]
 }
