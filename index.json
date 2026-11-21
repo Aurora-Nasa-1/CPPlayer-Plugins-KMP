@@ -169,46 +169,46 @@
       "author": "Aurora-Nasa-1",
       "artifacts": [
         {
-          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-windows.zip",
-          "bytes": 3992698,
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.3/apple-music-windows.zip",
+          "bytes": 3992610,
           "platform": "windows",
-          "sha256": "6d5d496bbb64f66dbc393faefc8880fdbec47945c160ece8dec1b4d65582f4ff",
+          "sha256": "df87f1a815bbac5845364aa3284058d95d1d5824cf0faa1fc8f6f9620b8ae371",
           "runtime": "native",
           "arch": "x64"
         },
         {
-          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-linux.zip",
-          "bytes": 4168058,
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.3/apple-music-linux.zip",
+          "bytes": 4168021,
           "platform": "linux",
-          "sha256": "d56bc14b8f95d3f949462e6568e09b21fb1a8601596e713c7168feb109932a7d",
+          "sha256": "2ed008d786d6a5eec6245ab30b355389d295d8c568a9612c36ec51259e4cd87d",
           "runtime": "native",
           "arch": "x64"
         },
         {
-          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-macos.zip",
-          "bytes": 3807023,
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.3/apple-music-macos.zip",
+          "bytes": 3807022,
           "platform": "macos",
-          "sha256": "4026a561d99659657927219f7faad4d54851317dbed92ecbbf75fa26142bfb37",
+          "sha256": "71eee07a711178ebb97cc88a61c1ad6e09943d1576fc99d0affc650ef7a529d2",
           "runtime": "native",
           "arch": "arm64"
         },
         {
-          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.2/apple-music-android.zip",
-          "bytes": 3948359,
+          "url": "https://github.com/Aurora-Nasa-1/AM-CPPlayer-Plugin/releases/download/v1.0.3/apple-music-android.zip",
+          "bytes": 3948358,
           "platform": "android",
-          "sha256": "055a6426a2f63aa75fc6221921d1a286df171cd5963b78c4aa42379cf927af1e",
+          "sha256": "051561847f2316a2463b62d8f3834beb842fa02c55338e5395431b2ab75f45a6",
           "runtime": "native",
           "arch": "arm64"
         }
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "基于 KMP SDK v1 的 Apple Music 原生音源，支持搜索/详情/歌词/歌单/专辑/艺人、明文试听与 Widevine DRM 播放。",
       "name": "Apple Music (Rust)",
       "id": "apple-music-rs",
       "apiVersion": 1,
       "minHostApiVersion": 1,
       "kind": "provider",
-      "changelog": "v1.0.0: 首个 kmp-sdk-v1 原生 Provider；导出 JNI 与 C ABI v1；Widevine 加密 HLS 经宿主 CDM 解密，附 drm_e2e 真实凭据验收工具。"
+      "changelog": "v1.0.1: 补充 media-user-token 获取与 Cookie 登录说明；修订平台包版本并同步下载校验信息。"
     }
   ]
 }
