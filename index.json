@@ -6,11 +6,11 @@
       "id": "netease-cloudmusic-rs",
       "kind": "provider",
       "name": "NeteaseCloudMusicApi-RS",
-      "version": "1.3.6",
+      "version": "1.3.7",
       "description": "基于 KMP SDK v1 重构的网易云原生音源，支持动态搜索与发布、私人 FM 模式、动态音质与 Native 会话。",
       "author": "Aurora-Nasa-1",
       "homepage": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti",
-      "changelog": "v1.3.6：新增动态关键词搜索与纯文字发布，补全动态线程 ID 透传与评论兼容；优化原生会话共享 Tokio/HTTP 运行时与二进制响应解密，修复新歌速递、私人 FM 与歌手详情兼容性。",
+      "changelog": "v1.3.7：HTTP 客户端启用 HTTP/2 与 gzip/deflate 压缩并优化连接池与 TCP keepalive；新增跨会话按设备共享的 XEAPI 公钥缓存与 RSA 公钥解析缓存；Tokio 原生运行时扩至 4 工作线程并以 Notify 替代取消轮询；精简高音质播放地址回退链路，减少无效降级请求。",
       "apiVersion": 1,
       "minHostApiVersion": 1,
       "artifacts": [
@@ -18,41 +18,41 @@
           "platform": "windows",
           "arch": "x64",
           "runtime": "native",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.6/ncm-api-rs-windows-1.3.6.zip",
-          "sha256": "e0fb6902b80e909dc1ce25f6dd459d922602df029e28c15ea175df5729dbb423",
-          "bytes": 3797609
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.7/ncm-api-rs-windows-1.3.7.zip",
+          "sha256": "d40b8c267d8f28513ee2bd03d81a62819cd47392d2c0b1ba0ff64baacbf3ec60",
+          "bytes": 4278328
         },
         {
           "platform": "linux",
           "arch": "x64",
           "runtime": "native",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.6/ncm-api-rs-linux-1.3.6.zip",
-          "sha256": "850c43ea6ed0b899a05ab0d38c3adad6ede7e6eda633a1f6d1880f6df3c89e8c",
-          "bytes": 4226557
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.7/ncm-api-rs-linux-1.3.7.zip",
+          "sha256": "4e12c138685bd886d8ad3e4911671678e25ac9c52b8615e7df6cd87e4da09606",
+          "bytes": 4737720
         },
         {
           "platform": "android",
           "arch": "arm64",
           "runtime": "native",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.6/ncm-api-rs-android-1.3.6.zip",
-          "sha256": "163d707313a784f231028eb7a2f55f80fdf72c74d9de08d20a1168a7e87c0871",
-          "bytes": 7624094
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.7/ncm-api-rs-android-1.3.7.zip",
+          "sha256": "570c9fd2c7cafe343f28654096017dccae1601fdf114b1b3ca2d9bdb4fe59aa1",
+          "bytes": 8606049
         },
         {
           "platform": "android",
           "arch": "armv7",
           "runtime": "native",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.6/ncm-api-rs-android-1.3.6.zip",
-          "sha256": "163d707313a784f231028eb7a2f55f80fdf72c74d9de08d20a1168a7e87c0871",
-          "bytes": 7624094
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.7/ncm-api-rs-android-1.3.7.zip",
+          "sha256": "570c9fd2c7cafe343f28654096017dccae1601fdf114b1b3ca2d9bdb4fe59aa1",
+          "bytes": 8606049
         },
         {
           "platform": "android",
           "arch": "x64",
           "runtime": "native",
-          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.6/ncm-api-rs-android-1.3.6.zip",
-          "sha256": "163d707313a784f231028eb7a2f55f80fdf72c74d9de08d20a1168a7e87c0871",
-          "bytes": 7624094
+          "url": "https://github.com/Aurora-Nasa-1/3rd-CPPlayer-netcloudMusic-Muti/releases/download/v1.3.7/ncm-api-rs-android-1.3.7.zip",
+          "sha256": "570c9fd2c7cafe343f28654096017dccae1601fdf114b1b3ca2d9bdb4fe59aa1",
+          "bytes": 8606049
         }
       ]
     },
